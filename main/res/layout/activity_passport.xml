@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maddie.optionmenu.PassportActivity">
+
+    <TextView
+        android:id="@+id/group_label"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gate_label"
+        android:layout_alignBottom="@+id/gate_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_x="459dp"
+        android:layout_y="511dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="GROUP"
+        tools:layout_editor_absoluteX="431dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/gate_label"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/terminal_label"
+        android:layout_alignBottom="@+id/terminal_label"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_toLeftOf="@+id/terminal_label"
+        android:layout_toStartOf="@+id/terminal_label"
+        android:layout_x="236dp"
+        android:layout_y="511dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="GATE"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/terminal_label"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airplane"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="184dp"
+        android:layout_toEndOf="@+id/boarding_pass"
+        android:layout_toRightOf="@+id/boarding_pass"
+        android:layout_x="20dp"
+        android:layout_y="510dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="BOARDING"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:id="@+id/boarding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passenger_label"
+        android:layout_alignLeft="@+id/terminal_label"
+        android:layout_alignStart="@+id/terminal_label"
+        android:text="boarding"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/gate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gate_label"
+        android:layout_alignStart="@+id/gate_label"
+        android:layout_below="@+id/gate_label"
+        android:layout_marginTop="30dp"
+        android:text="gate"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gate"
+        android:layout_alignBottom="@+id/gate"
+        android:layout_alignLeft="@+id/group_label"
+        android:layout_alignStart="@+id/group_label"
+        android:text="group"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/passenger_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="82dp"
+        android:layout_toLeftOf="@+id/boarding"
+        android:layout_toStartOf="@+id/boarding"
+        android:text="PASSENGER" />
+
+    <TextView
+        android:id="@+id/passenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passenger_label"
+        android:layout_alignStart="@+id/passenger_label"
+        android:layout_below="@+id/passenger_label"
+        android:layout_marginTop="15dp"
+        android:text="passenger"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/seat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passenger"
+        android:layout_alignStart="@+id/passenger"
+        android:layout_below="@+id/passenger"
+        android:layout_marginTop="47dp"
+        android:text="SEAT" />
+
+    <TextView
+        android:id="@+id/seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seat_label"
+        android:layout_alignRight="@+id/seat_label"
+        android:layout_below="@+id/seat_label"
+        android:layout_marginTop="18dp"
+        android:text="seat"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/group"
+        android:layout_alignStart="@+id/group"
+        android:layout_alignTop="@+id/passenger_label"
+        app:srcCompat="@drawable/sample_qr" />
+
+    <ImageView
+        android:id="@+id/airplane"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        app:srcCompat="@drawable/airplane" />
+
+    <TextView
+        android:id="@+id/starting_dest"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/airplane"
+        android:layout_alignLeft="@+id/group_label"
+        android:layout_alignStart="@+id/group_label"
+        android:layout_marginBottom="63dp"
+        android:text="starting_dest"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/ending_dest"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/starting_dest"
+        android:layout_alignBottom="@+id/starting_dest"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="ending_dest"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/starting_dest"
+        android:layout_alignStart="@+id/starting_dest"
+        android:layout_alignEnd="@id/starting_dest"
+        android:layout_below="@+id/starting_dest"
+        android:text="start_time"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_alignRight="@id/starting_dest" />
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start_time"
+        android:layout_alignBottom="@+id/start_time"
+        android:layout_alignLeft="@+id/ending_dest"
+        android:layout_alignStart="@+id/ending_dest"
+        android:text="end_time"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/boarding_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Boarding Pass"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"/>
+
+
+
+</RelativeLayout>

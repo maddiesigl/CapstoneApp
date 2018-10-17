@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.maddie.optionmenu.NameActivity"
+    >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter name to query location" />
+
+    <Button
+        android:id="@+id/query_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Location"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/airport_map">
+
+
+        <EditText
+            android:id="@+id/textView1"
+            android:layout_width="230dp"
+            android:layout_height="130dp"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginTop="37dp"
+            android:background="@android:color/transparent"
+            android:editable="false"
+            android:fadeScrollbars="false"
+            android:inputType="none"
+            android:scrollIndicators="right"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="none"
+            android:textSize="18sp"
+            android:verticalScrollbarPosition="right" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/airport_map" />
+
+        <Button
+            android:id="@+id/scan1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/scan1"
+            android:layout_alignRight="@+id/scan1"
+            android:layout_below="@+id/scan5"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="340dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="255dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="420dp"
+            android:layout_marginTop="450dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView1"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="start"
+            android:inputType="none"
+            android:text="Search Results"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

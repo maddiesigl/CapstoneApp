@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maddie.optionmenu.PathActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/airport_map">
+
+
+        <EditText
+            android:id="@+id/textView1"
+            android:layout_width="230dp"
+            android:layout_height="130dp"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginTop="37dp"
+            android:background="@android:color/transparent"
+            android:editable="false"
+            android:fadeScrollbars="false"
+            android:inputType="none"
+            android:scrollIndicators="right"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="none"
+            android:textSize="18sp"
+            android:verticalScrollbarPosition="right" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/directions_button"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/airport_map" />
+
+        <com.example.maddie.optionmenu.LineView
+            android:id="@+id/LineView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/scan1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="40dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/scan5"
+            android:layout_marginTop="0dp"
+            android:layout_toLeftOf="@+id/scan1"
+            android:layout_toStartOf="@+id/scan1"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="410dp"
+            android:layout_marginTop="390dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="450dp"
+            android:layout_marginTop="320dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/scan5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="440dp"
+            android:layout_marginTop="530dp"
+            android:width="20dp"
+            android:height="20dp"
+            android:background="@drawable/scanner"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp" />
+
+        <Button
+            android:id="@+id/directions_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:text="Find Directions" />
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/dest"
+            android:layout_alignEnd="@+id/scan2"
+            android:layout_alignRight="@+id/scan2"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/dest"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/directions_button"
+            android:layout_alignBottom="@+id/directions_button"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/start"
+            android:layout_toLeftOf="@+id/scan1"
+            android:layout_toStartOf="@+id/scan1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Starting Location"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_toEndOf="@+id/scan2"
+            android:layout_toRightOf="@+id/scan2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Destination"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
